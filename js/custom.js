@@ -117,4 +117,88 @@ jQuery(document).ready(function($) {
         })
     })
 
-})
+    // Fade out
+    $("#btn-fade-out").click(function() {
+        $("#image-id").fadeOut(1000,function() {
+            console.log("Image faded out")
+        })
+    })
+
+    // Fade In
+    $("#btn-fade-in").click(function() {
+        $("#image-id").fadeIn(1000,function() {
+            console.log("Image faded In")
+        })
+    })
+
+    $("#btn-fade-toggle").click(function() {
+        $("#image-id").fadeToggle(1000, function() {
+            console.log("Image toggled")
+        })
+    })
+
+    $("#btn-fade-to").click(function() {
+        $("#image-id").fadeTo(1000, 0.5, function() {
+            console.log("Image Faded")
+        })
+    })
+
+    $("#btn-slide-down").click(function() {
+        $("#image-id").slideDown(1000, function() {
+            console.log("Image slided down")
+        })
+    })
+
+
+    $("#btn-slide-up").click(function() {
+        $("#image-id").slideUp(2000, function() {
+            console.log("Image slided up")
+        })
+    })
+
+
+    $("#btn-slide-toggle").click(function() {
+        $("#image-id").slideToggle(1000, function() {
+            console.log("Image toggle")
+        })
+    })
+
+    // Animate
+    $("#btn-animate").click(function() {
+        $("#nature-image").animate({left:"+=80"},1000, function() {
+            console.log("Image animated by user")
+        })
+    })
+    // Get text
+    let textData = $("p").text();
+    console.log(textData)
+
+    // Set text
+    $("#btn-set-data").click(function() {
+        new_text = "This is sample text"
+        $("p").text(new_text)
+    })
+
+    // Get HTML
+    let htmlData = $("p").html()
+    console.log(htmlData)
+
+    // Set html
+    $("#btn-set-html").click(function() {
+        new_html = "<b>This is html text</b>"
+        $("p").html(new_html)
+    })
+
+   input_value =  $("#input-id").val()
+   console.log(input_value)
+
+   $("#btn-set-value").click(function() {
+        new_input_value = "Hello World!"
+       $("#input-id").val(new_input_value)
+   })
+     
+
+}) 
+
+
+
