@@ -1,3 +1,11 @@
 #nature-image {
     position: relative;
 }
+
+.my-class {
+    color: rgb(238, 122, 27);
+}
+
+.color-class {
+    font-size: "70px";
+}

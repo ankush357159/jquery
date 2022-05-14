@@ -196,6 +196,37 @@ jQuery(document).ready(function($) {
         new_input_value = "Hello World!"
        $("#input-id").val(new_input_value)
    })
+
+   const attr_value1 = $("link").attr("href")
+   console.log(attr_value1)
+
+   const attr_value2 = $("input").attr("data-value")
+   console.log(attr_value2)
+
+
+    //    Set image source attribute
+    $("#btn-set-image").click(function() {
+    $("#image-id").attr("src", "image/pinocchio.jpg")
+    })
+
+    $("#btn-add-class").click(function() {
+        $("p").addClass("my-class")
+    })
+
+    $("#btn-remove-class").click(function() {
+        $("p").removeClass("my-class")
+    })
+
+    $("#btn-toggle-class").click(function() {
+        $("p").toggleClass("my-class")
+    })
+
+    $("#btn-css").click(function() {
+        $("p").css("font-size", 30)
+    })
+
+
+
      
 
 }) 
