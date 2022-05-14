@@ -85,3 +85,36 @@ jQuery.noConflict()
 //         console.log("Window resized")
 //     })
 // })
+
+jQuery(document).ready(function($) {
+    // Hide Image
+    $("#btn-hide").click(function() {
+        $("#image-id").hide(2000,function() {
+            console.log("Image is hidden by user")
+        })
+
+        $("#btn-hide").hide(1000, function() {
+            console.log("Button hidden by user")
+        })
+    })
+
+    // Show Image
+    $("#btn-show").click(function() {
+        $("#image-id").show(1000,function() {
+            console.log("Image returned back by the user")
+        })
+
+        $("#btn-hide").show(1000, function() {
+            console.log("Button made visible by user")
+        })
+
+    })
+
+    // Hide and show image - toggle
+    $("#btn-toggle").click(function() {
+        $("#image-id").toggle(1000,function() {
+            console.log("Toggled Image by the user")
+        })
+    })
+
+})
